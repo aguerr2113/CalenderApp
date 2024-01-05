@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/014d0c931b.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <nav> 
+            <ul>
+                <li><a href="../month2/sign-in.html">Sign In</a></li>
+            </ul>
+        </nav>
+        <div id="container">
+
+            <div id="header-text">
+                <p>Contdown Calender</p>
+                <h1>This thing does <span>STUFF</span><br>It really does, its awesome<br>So use it please!<br><button id="btn">Sign up!</button></h1>
+            </div>
+            <div id="sign-up" style="display: none;">
+                <h2>Sign Up</h2>
+                <form id="sign-up-form" action="/signup" method="post">
+                    <div class="input-icons">
+                        <div class="icon-input">
+                            <i class="fa-regular fa-address-card" style="color: #84adb0;"></i>
+                            <input class="input-field" type="text" id="fname" name="fname" maxlength="70" required><br>
+                            
+                        </div>
+
+                        <div class="icon-input">
+                            <i class="fa-regular fa-envelope" style="color: #84adb0;"></i>
+                            <input class="input-field" type="email" id="email" name="email" required><br>  
+                            
+                        </div>
+                        <p id="email-err" class="error">Please enter a valid Email</p>
+
+                        <div class="icon-input">
+                            <i class="fa-solid fa-user" style="color: #84adb0;"></i>
+                            <input class="input-field" type="text" id="username" name="username" minlength="8" maxlength="20" required><br>
+                            
+                        </div>
+                        <p id="username-err" class="error">Please enter a valid username.<br>Username must be at least 8 characters long.<br>Can only include letters,digits and underscores.</p>
+
+                        <div class="icon-input">
+                            <i class="fa-solid fa-key" style="color: #84adb0;"></i>
+                            <input class="input-field" type="password" id="password" name="password" minlength="8" required><br>
+                            
+                        </div>
+                        <p id="password-err" class="error">Please enter a valid Password,password must be at least 8 characters long and include:<br>1 letter<br>1 number<br>1 special character(!,@,#,$,%,&)
+                        </p>    
+                    </div>
+                    <input type="submit">
+                  </form>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
